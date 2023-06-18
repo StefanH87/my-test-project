@@ -1,6 +1,10 @@
 <template>
   <basic-header />
-  <book-list />
+  <main>
+    <div id="app" class="inside">
+      <BookList />
+    </div>
+  </main>
 </template>
 
 <script>

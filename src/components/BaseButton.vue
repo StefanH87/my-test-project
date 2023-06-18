@@ -1,5 +1,5 @@
 <template>
-  <button :class="styling">{{ text }}</button>
+  <button :class="styling" @click="$emit('btn-clicked')">{{ text }}</button>
 </template>
 
 <style scoped>
@@ -35,6 +35,7 @@
 
 <script>
 export default {
+  emits: ["btn-clicked"],
   props: {
     text: {
       type: String,
